@@ -1,2 +1,21 @@
-# option-pricing
-This Python code simulates and calculates the price of a European call option using two approaches: the analytical Black–Scholes formula and a numerical Monte Carlo simulation. The Monte Carlo method generates many possible future stock prices under a stochastic model, computes the payoff for each path, and averages them to estimate the option price, while the Black–Scholes formula provides an exact benchmark by solving a differential equation. The script also demonstrates convergence of the Monte Carlo method by increasing the number of simulated paths and calculates a 95% confidence interval for the Monte Carlo estimates, allowing for comparison of accuracy against the analytical solution.
+# European Call Option Pricing: Black-Scholes vs Monte Carlo Simulation
+
+This Python script compares the price of a European call option calculated using the **Black–Scholes formula** and a **Monte Carlo simulation**. It also estimates the 95% confidence interval of the Monte Carlo price.
+
+## Features
+
+- Computes the analytical Black–Scholes price of a European call option.
+- Performs Monte Carlo simulations for multiple numbers of paths.
+- Calculates absolute errors between Monte Carlo and Black–Scholes prices.
+- Computes a 95% confidence interval for the Monte Carlo estimate.
+
+## Requirements
+
+- Python 3.8+
+- NumPy
+- SciPy
+
+Install the required packages with:
+
+```bash
+pip install numpy scipy
