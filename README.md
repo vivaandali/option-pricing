@@ -1,15 +1,15 @@
-# 📊 Black-Scholes vs Monte Carlo Option Pricing
+# Black-Scholes vs Monte Carlo Option Pricing
 
-## 📌 Project Overview
+## Project Overview
 This Python implementation provides a comparative analysis of two fundamental approaches in financial derivatives pricing: the analytical Black-Scholes model and the numerical Monte Carlo simulation method. The project demonstrates how Monte Carlo methods converge to the theoretical Black-Scholes price as the number of simulated paths increases, offering insights into the trade-offs between computational efficiency and accuracy in quantitative finance.
 
-## 🎯 Key Objectives
+## Key Objectives
 - Compare analytical and numerical pricing methods for European call options
 - Demonstrate Monte Carlo convergence properties
 - Provide educational insights into quantitative finance techniques
 - Offer reusable code for financial modeling and analysis
 
-## 📈 Features
+## Features
 
 ### Core Functionality
 - **Black-Scholes Formula Implementation**: Exact analytical solution using cumulative normal distribution
