@@ -1,21 +1,32 @@
-# European Call Option Pricing: Black-Scholes vs Monte Carlo Simulation
+# 📊 Black-Scholes vs Monte Carlo Option Pricing
 
-This Python script compares the price of a European call option calculated using the **Black–Scholes formula** and a **Monte Carlo simulation**. It also estimates the 95% confidence interval of the Monte Carlo price.
+## 📌 Project Overview
+This Python implementation provides a comparative analysis of two fundamental approaches in financial derivatives pricing: the analytical Black-Scholes model and the numerical Monte Carlo simulation method. The project demonstrates how Monte Carlo methods converge to the theoretical Black-Scholes price as the number of simulated paths increases, offering insights into the trade-offs between computational efficiency and accuracy in quantitative finance.
 
-## Features
+## 🎯 Key Objectives
+- Compare analytical and numerical pricing methods for European call options
+- Demonstrate Monte Carlo convergence properties
+- Provide educational insights into quantitative finance techniques
+- Offer reusable code for financial modeling and analysis
 
-- Computes the analytical Black–Scholes price of a European call option.
-- Performs Monte Carlo simulations for multiple numbers of paths.
-- Calculates absolute errors between Monte Carlo and Black–Scholes prices.
-- Computes a 95% confidence interval for the Monte Carlo estimate.
+## 📈 Features
 
-## Requirements
+### Core Functionality
+- **Black-Scholes Formula Implementation**: Exact analytical solution using cumulative normal distribution
+- **Monte Carlo Simulation**: Path generation using Geometric Brownian Motion (GBM)
+- **Convergence Analysis**: Comparative results across 4 orders of magnitude (1K to 1M paths)
+- **Statistical Validation**: 95% confidence interval calculation for Monte Carlo estimates
+- **Reproducible Results**: Fixed random seed for consistent outputs
 
-- Python 3.8+
-- NumPy
-- SciPy
+### Advanced Capabilities
+- Error analysis and convergence tracking
+- Discounted payoff computation with continuous compounding
+- Efficient vectorized NumPy operations for performance
+- Clean, documented code with mathematical formulas included
 
-Install the required packages with:
+## 🛠️ Technical Requirements
 
-```bash
-pip install numpy scipy
+### Python Dependencies
+```python
+numpy >= 1.19.0      # Numerical computations and array operations
+scipy >= 1.6.0       # Statistical functions (norm.cdf)
